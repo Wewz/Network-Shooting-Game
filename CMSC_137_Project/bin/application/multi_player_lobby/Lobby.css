@@ -1,0 +1,58 @@
+#chatScrollable {
+	-fx-background-color:  #171628;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-background-radius: 10px 10px 10px 10px;
+}
+
+#messagesDiv, #chatScrollable {
+	-fx-background-color:  #171628;
+}
+
+.scroll-pane {
+    -fx-background: #171628;
+    -fx-background-color: #171628;
+}
+
+.scroll-pane .viewport {
+    -fx-background: #171628;
+    -fx-background-color: #171628;
+}
+
+/* Target the vertical scroll bar increment and decrement arrows */
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #171628;
+}
+
+/* Target the vertical and horizontal scroll bar thumbs */
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: linear-gradient(to bottom, #97C8F1, #FF70C1);
+}
+
+/* Target the vertical and horizontal scroll bar tracks */
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: #171628;
+}
+
+/* Ensure the scroll bars themselves have the correct background */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: #171628;
+}
+
+.text-area .content {
+	-fx-background-color: #171628;
+    -fx-border-width: 0px 0px 0px 0px;
+}
+
+#chatInput {
+	-fx-text-fill: white;
+}
+
+#sendChatButton {
+	-fx-background-color: linear-gradient(to right, #97C8F1, #FF70C1);
+}
+

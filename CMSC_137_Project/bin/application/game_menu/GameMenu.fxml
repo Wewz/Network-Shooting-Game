@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.game_menu.GameMenuController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1200.0">
+         <children>
+            <ImageView fitHeight="716.0" fitWidth="1259.0" layoutX="-7.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu%20BG.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="singlePlay" fitHeight="84.0" fitWidth="331.0" layoutX="497.0" layoutY="303.0" onMouseClicked="#handleSinglePlay" onMouseEntered="#handleMouseEnteredSinglePlay" onMouseExited="#handleMouseExitedSingleplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu_Single_Player.png" />
+               </image>
+               <effect>
+                  <DropShadow height="24.0" offsetY="5.0" radius="10.75">
+                     <color>
+                        <Color opacity="0.699999988079071" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="createLobby" fitHeight="84.0" fitWidth="331.0" layoutX="493.0" layoutY="407.0" onMouseClicked="#handleCreateLobby" onMouseEntered="#handleMouseEnteredCreateLobby" onMouseExited="#handleMouseExitedCreateLobby" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu_Create_Lobby.png" />
+               </image>
+               <effect>
+                  <DropShadow height="24.0" offsetY="5.0" radius="10.75">
+                     <color>
+                        <Color opacity="0.699999988079071" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="84.0" fitWidth="331.0" layoutX="497.0" layoutY="508.0" onMouseClicked="#handleExitButton" onMouseEntered="#handleMouseEnteredExit" onMouseExited="#handleMouseExitedExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu_Exit.png" />
+               </image>
+               <effect>
+                  <DropShadow height="24.0" offsetY="10.0" radius="10.75">
+                     <color>
+                        <Color opacity="0.699999988079071" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Text fill="#ff9913" layoutX="334.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genshin's Impact with Friends" textAlignment="CENTER" wrappingWidth="584.87890625">
+               <font>
+                  <Font name="Montserrat Black" size="61.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="334.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genshin's Impact with Friends" textAlignment="CENTER" wrappingWidth="584.87890625">
+               <font>
+                  <Font name="Montserrat Black" size="61.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
